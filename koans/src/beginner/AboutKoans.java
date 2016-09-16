@@ -8,12 +8,14 @@ public class AboutKoans {
 
     @Koan
     public void findAboutKoansFile() {
-        fail("delete this line to advance");
+        // Hello, I'm a koan. I'm a piece of code, piece of wisdom,
+        // which you learn JAVA with. Every koan is a small task to solve.
+        // To solve it is to make it pass, or not to fail.
     }
 
     @Koan
     public void definitionOfKoanCompletion() {
-        boolean koanIsComplete = false;
+        boolean koanIsComplete = true;
         if (!koanIsComplete) {
             fail("what if koanIsComplete variable was true?");
         }
