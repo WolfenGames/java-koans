@@ -18,14 +18,14 @@ public class AboutDates {
 
     @Koan
     public void dateToString() {
-        assertEquals(date.toString(), "Sat Mar 03 14:33:21 CAT 1973");
+        assertEquals(date.toString(), "Sat Mar 03 14:33:21 SAST 1973");
     }
 
     @Koan
     public void changingDateValue() {
         int oneHourInMiliseconds = 3600000;
         date.setTime(date.getTime() + oneHourInMiliseconds);
-        assertEquals(date.toString(), "Sat Mar 03 15:33:21 CAT 1973");
+        assertEquals(date.toString(), "Sat Mar 03 15:33:21 SAST 1973");
     }
 
     @Koan
@@ -34,7 +34,7 @@ public class AboutDates {
         // This does not change the date field
         cal.setTime(date);
         cal.add(Calendar.MONTH, 1);
-        assertEquals(cal.getTime().toString(), "Tue Apr 03 15:33:21 CAT 1973");
+        assertEquals(cal.getTime().toString(), "Tue Apr 03 15:33:21 SAST 1973");
     }
 
     @Koan
@@ -42,7 +42,7 @@ public class AboutDates {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         cal.roll(Calendar.MONTH, 12);
-        assertEquals(cal.getTime().toString(), "Sat Mar 03 15:33:21 CAT 1973");
+        assertEquals(cal.getTime().toString(), "Sat Mar 03 15:33:21 SAST 1973");
     }
 
     @Koan
@@ -68,7 +68,7 @@ public class AboutDates {
     public void usingDateFormatToParseDates() throws ParseException {
         DateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
         Date date2 = dateFormat.parse("01-01-2000");
-        assertEquals(date2.toString(), "Sat Jan 01 00:00:00 CAT 2000");
+        assertEquals(date2.toString(), "Sat Jan 01 00:00:00 SAST 2000");
         // What happened to the time? What do you need to change to keep the time as well?
     }
 }
