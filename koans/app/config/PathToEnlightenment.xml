@@ -6,29 +6,28 @@
         <koan name="definitionOfKoanCompletion" displayIncompleteKoanException="false" />
         </suite>
         <suite class="AboutAssertions"/>
-        <suite class="AboutEquality"/>
+        <suite class="AboutPrimitives" />
+        <suite class="AboutConstructors"/>
+        <suite class="AboutObjects"/>
+        <suite class="AboutInheritance"/>
+        <suite class="AboutMethodPreference"/>
+        <suite class="AboutCasting"/>
+        <suite class="AboutArrays"/>
         <suite class="AboutStrings"/>
         <suite class="AboutArithmeticOperators"/>
         <suite class="AboutConditionals"/>
         <suite class="AboutLoops" />
-        <suite class="AboutPrimitives" />
-        <suite class="AboutObjects"/>
-        <suite class="AboutInheritance"/>
-        <suite class="AboutCasting"/>
-        <suite class="AboutConstructors"/>
         <suite class="AboutEnums"/>
         <suite class="AboutExceptions"/>
-        <suite class="AboutMethodPreference"/>
         <suite class="AboutBitwiseOperators"/>
-        <suite class="AboutArrays"/>
         <suite class="AboutVarArgs"/>
     </package>
     <package pkg="intermediate" name="Intermediate">
         <suite class="AboutAutoboxing"/>
         <suite class="AboutCollections"/>
+        <suite class="AboutEquality"/>
         <suite class="AboutComparison"/>
         <suite class="AboutDates"/>
-        <suite class="AboutEquality"/>
         <suite class="AboutFileIO"/>
         <suite class="AboutInnerClasses"/>
         <suite class="AboutLocale"/>
