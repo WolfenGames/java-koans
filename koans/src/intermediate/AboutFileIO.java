@@ -44,7 +44,7 @@ public class AboutFileIO {
         // but the literal reference is != the String reference.
         // I'm surprised new String(in) doesn't create nonequal references as well, but
         // it seems to work.
-        assertEquals(new String(in), new String(in));
+        assertEquals(new String(in), "First line\nSecond line\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
         file.delete();
     }
 
