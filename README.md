@@ -1,27 +1,19 @@
 # Java Koans 
 
-[![Build Status](https://travis-ci.org/matyb/java-koans.png?branch=master)](https://travis-ci.org/matyb/java-koans)
+Point your java variables to  JDK 8  (Java 9 works but there are a few hiccups in the new java 9 date formats!)
 
-Running Instructions:
-=====================
-* Download and unarchive the contents of the most recent java-koans in development from:
-https://github.com/matyb/java-koans/archive/master.zip
-* Open a terminal and cd to the directory you unarchived:
-```cd <the directory you just unarchived>```
-* Within it you'll find:
-    * *koans*: this directory contains the application and its lessons, it is all that is needed to advance through the koans themselves and **it can be distributed independently**
-    * *lib*: this directory contains the code the koans engine is comprised of and built with
-    * *gradle*: wrapper for build library used to build koans source, setup project files in eclipse/idea, run tests, etc. you probably don't need to touch anything in here
-* Change directory to the koans directory: ```cd koans```
-* If you are using windows enter: ```run.bat``` or ```./run.sh``` if you are using Mac or Linux
+- Add java 8 **bin** to **path** e.g. "C:\\ProgramFiles\\Java\\jdk1.8.XXX\\bin"
 
-Developing a Koan:
-==================
-* Follow any of the existing koans as an example to create a new class with koan methods (indicated by the @Koan annotation, they're public and specify no arguments)
-* Define the order the koan suite (if it's new) will run in the koans/app/config/PathToEnlightenment.xml file
-* [Override the lesson text](https://github.com/matyb/java-koans/blob/master/koans/app/config/i18n/messages_en.properties#L1) when it fails (default is expected 'X' found 'Y')
-* Optionally you may use dynamic content in your lesson, examples are located in the XmlVariableInjector class (and Test) and the AboutKoans.java file
+Clone or download the repo <https://github.com/rudolph-est/java-koans> and open a command prompt  
+Run “run.bat” in the "koans" directory  - \\koans\\run.bat
 
-Something's wrong:
-==================
-* If the koans app is constantly timing out compiling a koan, your computer may be too slow to compile the koan classes with the default timeout value. Update the compile_timeout_in_ms property in koans/app/config/config.properties with a larger value and try again.
+The goal is to edit and replace all the “\_\_” for each exercise with the
+correct answer
+
+You need to solve the problem to get to the next level.
+
+For example: The first level is to fine the file AboutKoans.java:  
+Delete line 11 and change line’s 16 variable to be false  
+Then go to AboutAssertions and fix line 13 – replace the \_\_ with true.  
+Carry on until you have completed all the exercises.  
+Peek at the solutions branch if you need help
