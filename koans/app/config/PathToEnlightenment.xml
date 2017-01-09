@@ -6,30 +6,30 @@
         <koan name="definitionOfKoanCompletion" displayIncompleteKoanException="false" />
         </suite>
         <suite class="AboutAssertions"/>
+        <suite class="AboutVarArgs"/>		
         <suite class="AboutPrimitives" />
+        <suite class="AboutArithmeticOperators"/>	
+        <suite class="AboutBitwiseOperators"/>		
+		<suite class="AboutArrays"/>
+        <suite class="AboutStrings"/>		
+        <suite class="AboutConditionals"/>
+        <suite class="AboutLoops" />		
         <suite class="AboutConstructors"/>
         <suite class="AboutObjects"/>
+        <suite class="AboutInnerClasses"/>		
         <suite class="AboutInheritance"/>
         <suite class="AboutMethodPreference"/>
         <suite class="AboutCasting"/>
-        <suite class="AboutArrays"/>
-        <suite class="AboutStrings"/>
-        <suite class="AboutArithmeticOperators"/>
-        <suite class="AboutConditionals"/>
-        <suite class="AboutLoops" />
+        <suite class="AboutExceptions"/>		
         <suite class="AboutEnums"/>
-        <suite class="AboutExceptions"/>
-        <suite class="AboutBitwiseOperators"/>
-        <suite class="AboutVarArgs"/>
+        <suite class="AboutCollections"/>
     </package>
     <package pkg="intermediate" name="Intermediate">
         <suite class="AboutAutoboxing"/>
-        <suite class="AboutCollections"/>
         <suite class="AboutEquality"/>
         <suite class="AboutComparison"/>
         <suite class="AboutDates"/>
         <suite class="AboutFileIO"/>
-        <suite class="AboutInnerClasses"/>
         <suite class="AboutLocale"/>
         <suite class="AboutRegularExpressions"/>
         <suite class="AboutSerialization"/>

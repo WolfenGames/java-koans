@@ -5,8 +5,8 @@ import static com.sandwich.util.Assert.fail;
 
 public class AboutMocks {
 	
-	static interface Collaborator {
-		public void doBusinessStuff();
+	interface Collaborator {
+		void doBusinessStuff();
 	}
 	
 	static class ExplosiveCollaborator implements Collaborator {

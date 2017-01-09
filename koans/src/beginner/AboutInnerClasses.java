@@ -1,4 +1,4 @@
-package intermediate;
+package beginner;
 
 import com.sandwich.koan.Koan;
 
@@ -66,7 +66,6 @@ public class AboutInnerClasses {
                     return 2000;
                 }
             }
-            ;
             return new SpecialInnerClass();
         }
     }

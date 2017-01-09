@@ -12,7 +12,7 @@ import static com.sandwich.util.Assert.assertEquals;
 public class AboutSerialization {
 
     @Koan
-    public void simpleSerialization() throws FileNotFoundException, IOException, ClassNotFoundException {
+    public void simpleSerialization() throws IOException, ClassNotFoundException {
         String s = "Hello world";
         // serialize
         File file = new File("SerializeFile");
@@ -89,7 +89,7 @@ public class AboutSerialization {
     }
 
     @Koan
-    public void customObjectSerializationWithTransientFields() throws FileNotFoundException, IOException, ClassNotFoundException {
+    public void customObjectSerializationWithTransientFields() throws IOException, ClassNotFoundException {
         // Note that this kind of access of fields is not good OO practice.
         // But let's focus on serialization here :)
         Car car = new Car();
@@ -116,7 +116,7 @@ public class AboutSerialization {
     }
 
     @Koan
-    public void customSerializationWithUnserializableFields() throws FileNotFoundException, IOException {
+    public void customSerializationWithUnserializableFields() throws IOException {
         Boat boat = new Boat();
         boat.engine = new Engine("diesel");
         File file = new File("SerializeFile");
@@ -187,7 +187,7 @@ public class AboutSerialization {
     }
 
     @Koan
-    public void serializeWithInheritanceWhenParentNotSerializable() throws FileNotFoundException, IOException, ClassNotFoundException {
+    public void serializeWithInheritanceWhenParentNotSerializable() throws IOException, ClassNotFoundException {
         MilitaryPlane p = new MilitaryPlane("F22");
 
         ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("SerializeFile"));
