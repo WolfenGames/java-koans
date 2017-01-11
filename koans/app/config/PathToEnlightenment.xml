@@ -21,11 +21,11 @@
         <suite class="AboutInheritance"/>
         <suite class="AboutMethodPreference"/>
         <suite class="AboutCasting"/>
+        <suite class="AboutAutoboxing"/>		
         <suite class="AboutExceptions"/>
         <suite class="AboutCollections"/>
     </package>
     <package pkg="intermediate" name="Intermediate">
-        <suite class="AboutAutoboxing"/>
         <suite class="AboutEquality"/>
         <suite class="AboutComparison"/>
         <suite class="AboutDates"/>
