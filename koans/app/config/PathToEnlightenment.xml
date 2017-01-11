@@ -8,20 +8,20 @@
         <suite class="AboutAssertions"/>
         <suite class="AboutVarArgs"/>		
         <suite class="AboutPrimitives" />
-        <suite class="AboutArithmeticOperators"/>	
-        <suite class="AboutBitwiseOperators"/>		
 		<suite class="AboutArrays"/>
-        <suite class="AboutStrings"/>		
+        <suite class="AboutStrings"/>	
+        <suite class="AboutEnums"/>		
+        <suite class="AboutArithmeticOperators"/>	
+        <suite class="AboutBitwiseOperators"/>
         <suite class="AboutConditionals"/>
-        <suite class="AboutLoops" />		
+        <suite class="AboutLoops"/>		
         <suite class="AboutConstructors"/>
         <suite class="AboutObjects"/>
         <suite class="AboutInnerClasses"/>		
         <suite class="AboutInheritance"/>
         <suite class="AboutMethodPreference"/>
         <suite class="AboutCasting"/>
-        <suite class="AboutExceptions"/>		
-        <suite class="AboutEnums"/>
+        <suite class="AboutExceptions"/>
         <suite class="AboutCollections"/>
     </package>
     <package pkg="intermediate" name="Intermediate">
